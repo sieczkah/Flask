@@ -39,7 +39,7 @@
             </div>
                 <div class="degrees"><span>{{ city['temp'] }}<span class="celsius"> °C</span></span></div>
              <div class="state">{{ city['state'].capitalize() }} </div>
-            <div class="city">{{ city['city'] }}</div>
+            <div class="city">{{ city['city'].upper() }}</div>
             <div class="local-time">{{ city['localtime'] }}</div>
         </div>
         {% endfor %}
